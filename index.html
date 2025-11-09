@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        <form>
+            <h1>Payment form</h1>
+            <p>Please complete all required (*) fields</p>
+            <h2>Contact information</h2>
+            <div class="country_selection">
+                <fieldset>
+                    <legend>Country *</legend>
+                    <label for="inp_1">
+                        <input type="radio" name="Country" id="inp_1" value="India">
+                        India
+                    </label>
+                    <br>
+                    <label for="inp_2">
+                        <input type="radio" name="Country" id="inp_2" value="Nepal">
+                        Nepal
+                    </label>
+                    <br>
+                    <label for="inp_3">
+                        <input type="radio" name="Country" id="inp_3" value="Sri Lanka">
+                        Sri Lanka
+                    </label>
+                </fieldset>
+                <section>
+                <p>
+                <label for="inp_name">
+                    Name: *
+                    <br>
+                    <input type="text" name="name" id="inp_name" value="Name" required placeholder="eg:-Ram">
+                </label>
+                </p>
+                <p>
+                <label for="inp_email">
+                    Email: *
+                    <br>
+                    <input type="text" name="email" id="inp_email" value="Email" placeholder="eg:-Ram@gmail.com" required>
+                </label>
+                </p>
+                <p>
+                <label for="inp_password">
+                    Password: *
+                    <br>
+                    <input type="text" name="password" id="inp_password" value="Password" required >
+                </label>
+                </p>
+                </section>
+            </div>
+            <div class="Payment">
+                <h2>Payment information</h2>
+
+                <p>
+                    <label for="inp_card">
+                        Card Type:
+                        <input type="text" name="Payment" id="inp_card" value="Card Type">
+                    </label>
+                </p>
+                 <p>
+                    <label for="inp_card_number">
+                        Card Number:
+                        <input type="text" name="Payment" id="inp_card_number" value="Card Number">
+                    </label>
+                </p>
+                 <p>
+                    <label for="inp_card">
+                        Card Type:
+                        <input type="text" name="Payment" id="inp_card" value="Card Type">
+                    </label>
+                </p>
+            </div>
+            <section>
+                <label for="submit">
+                    <input type="submit" name="button" id="inp_click" value="submit">
+                </label>
+            </section>
+        </form>
+    </div>
+</body>
+</html>
