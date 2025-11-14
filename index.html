@@ -4,88 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="shortcut icon" href="dlogo.pngs" type="image/x-icon">
-  <style>
+
+    <!-- Fixed favicon -->
+    <link rel="shortcut icon" href="dlogo.png" type="image/x-icon">
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .form{
+            background: #fff;
+            padding: 20px;
+            width: 400px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        input[type="text"]{
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        input[type="submit"]{
+            padding: 10px 20px;
+            background: #007bff;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover{
+            background: #0056b3;
+        }
+        fieldset{
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
     <div class="form">
         <form>
             <h1>Payment form</h1>
             <p>Please complete all required (*) fields</p>
+
             <h2>Contact information</h2>
+
             <div class="country_selection">
                 <fieldset>
                     <legend>Country *</legend>
-                    <label for="inp_1">
-                        <input type="radio" id="inp_1" value="India">
+
+                    <label>
+                        <input type="radio" name="country" value="India" required>
                         India
                     </label>
                     <br>
-                    <label for="inp_2">
-                        <input type="radio" id="inp_2" value="Nepal">
+                    <label>
+                        <input type="radio" name="country" value="Nepal">
                         Nepal
                     </label>
                     <br>
-                    <label for="inp_3">
-                        <input type="radio" id="inp_3" value="Sri Lanka">
+                    <label>
+                        <input type="radio" name="country" value="Sri Lanka">
                         Sri Lanka
                     </label>
                 </fieldset>
+
                 <section>
-                <p>
-                <label for="inp_name">
-                    Name: *
-                    <br>
-                    <input type="text" id="inp_name" name="Name" required placeholder="eg:-Ram">
-                </label>
-                </p>
-                <p>
-                <label for="inp_email">
-                    Email: *
-                    <br>
-                    <input type="text" id="inp_email" name="Email" placeholder="eg:-Ram@gmail.com" required>
-                </label>
-                </p>
-                <p>
-                <label for="inp_password">
-                    Password: *
-                    <br>
-                    <input type="text" id="inp_password" name="Password" required >
-                </label>
-                </p>
+                    <p>
+                        <label for="inp_name">
+                            Name: *
+                            <br>
+                            <input type="text" id="inp_name" name="Name" placeholder="eg:-Ram" required>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="inp_email">
+                            Email: *
+                            <br>
+                            <input type="text" id="inp_email" name="Email" placeholder="eg:-Ram@gmail.com" required>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="inp_password">
+                            Password: *
+                            <br>
+                            <input type="text" id="inp_password" name="Password" required>
+                        </label>
+                    </p>
+
                 </section>
             </div>
+
             <div class="Payment">
                 <h2>Payment information</h2>
 
                 <p>
-                    <label for="inp_card">
+                    <label for="card_type">
                         Card Type:
-                        <input type="text" id="inp_card" name="Card Type">
+                        <br>
+                        <input type="text" id="card_type" name="CardType">
                     </label>
                 </p>
-                 <p>
-                    <label for="inp_card_number">
+
+                <p>
+                    <label for="card_number">
                         Card Number:
-                        <input type="text" id="inp_card_number" name="Card Number">
+                        <br>
+                        <input type="text" id="card_number" name="CardNumber">
                     </label>
                 </p>
-                 <p>
-                    <label for="inp_card">
-                        Card Type:
-                        <input type="text" id="inp_card" name="Card Type">
-                    </label>
-                </p>
+
             </div>
+
             <section>
-                <label for="submit">
-                    <input type="submit" id="inp_click" name="submit">
-                </label>
+                <input type="submit" value="Pay Now">
             </section>
+
         </form>
     </div>
 </body>
-
 </html>
-
-
